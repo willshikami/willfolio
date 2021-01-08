@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:plant_water_tracker/constants/app_theme.dart';
-import 'package:plant_water_tracker/client/pages/home_page.dart';
+import 'package:willfolio/constants/app_theme.dart';
+import 'package:willfolio/client/pages/home_page.dart';
+import 'package:willfolio/routes/router_generator.dart';
 
 void main() {
   runApp(
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: HomePage(),
       theme: appTheme(),
+      onGenerateRoute: RouterGenerator.generateRoute,
     );
   }
 }

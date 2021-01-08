@@ -9,21 +9,21 @@ ThemeData appTheme() {
     backgroundColor: Color(0xFFEFF4F8),
     splashColor: Color(0xFFFFFFFF),
     accentColor: Color(0xFF828282),
-    textSelectionHandleColor: Color(0xFF9AA0AC),
-    textSelectionColor: Colors.black,
+    canvasColor: Color(0xFF9AA0AC),
+    shadowColor: Color(0xFF333333),
 
     // Default font family.
-    fontFamily: 'Avenir',
+    fontFamily: 'Futura',
 
     // Text Theme
     textTheme: TextTheme(
       headline1: TextStyle(
-        fontSize: 24.0,
-        fontWeight: FontWeight.bold,
+        fontSize: 64.0,
+        fontWeight: FontWeight.w500,
       ),
       headline2: TextStyle(
-        fontSize: 18.0,
-        fontWeight: FontWeight.bold,
+        fontSize: 42.0,
+        fontWeight: FontWeight.w500,
       ),
       headline3: TextStyle(
         fontSize: 16.0,
@@ -38,7 +38,7 @@ ThemeData appTheme() {
       ),
       bodyText1: TextStyle(
         fontSize: 14.0,
-        fontWeight: FontWeight.w700,
+        fontWeight: FontWeight.bold,
       ),
       bodyText2: TextStyle(
         fontSize: 12.0,
