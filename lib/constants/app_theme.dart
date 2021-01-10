@@ -10,7 +10,7 @@ ThemeData appTheme() {
     splashColor: Color(0xFFFFFFFF),
     accentColor: Color(0xFF828282),
     canvasColor: Color(0xFF9AA0AC),
-    shadowColor: Color(0xFF333333),
+    shadowColor: Color(0xFF2F2F31),
 
     // Default font family.
     fontFamily: 'Futura',
@@ -26,14 +26,17 @@ ThemeData appTheme() {
         fontWeight: FontWeight.w500,
       ),
       headline3: TextStyle(
-        fontSize: 16.0,
+        fontSize: 24.0,
         fontStyle: FontStyle.normal,
       ),
       headline4: TextStyle(
-        fontSize: 16.0,
+        fontSize: 18.0,
         fontWeight: FontWeight.bold,
       ),
       headline5: TextStyle(
+        fontSize: 18.0,
+      ),
+      headline6: TextStyle(
         fontSize: 16.0,
       ),
       bodyText1: TextStyle(

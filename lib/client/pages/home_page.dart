@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:willfolio/client/widgets/footer.dart';
 
 import 'package:willfolio/client/widgets/navbar.dart';
 import 'package:willfolio/client/widgets/masthead.dart';
+import 'package:willfolio/client/widgets/projects_section.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -14,6 +16,15 @@ class HomePage extends StatelessWidget {
             children: [
               NavigationBar(),
               MastHead(),
+              // Projects
+              ProjectSection(),
+              SizedBox(
+                height: 64,
+              ),
+              Footer(),
+              SizedBox(
+                height: 64,
+              ),
             ],
           ),
         ),
