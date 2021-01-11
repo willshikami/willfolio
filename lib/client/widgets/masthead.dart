@@ -16,13 +16,17 @@ class MastHead extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.symmetric(
           horizontal: isLargeScreen ? 24 : 16,
-          vertical: 12,
+          vertical: 52,
         ),
         child: Text(
           mastHeadText,
           style: isLargeScreen
-              ? Theme.of(context).textTheme.headline1
-              : Theme.of(context).textTheme.headline2,
+              ? Theme.of(context).textTheme.headline1.copyWith(
+                    color: Theme.of(context).shadowColor,
+                  )
+              : Theme.of(context).textTheme.headline2.copyWith(
+                    color: Theme.of(context).shadowColor,
+                  ),
         ),
       ),
     );

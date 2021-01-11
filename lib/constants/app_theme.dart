@@ -58,7 +58,7 @@ ThemeData appTheme() {
       ),
       bodyText2: TextStyle(
         fontFamily: 'Futura',
-        fontSize: 12.0,
+        fontSize: 14.0,
       ),
     ),
   );

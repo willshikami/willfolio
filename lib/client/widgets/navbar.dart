@@ -22,8 +22,9 @@ class NavigationBar extends StatelessWidget {
           Row(
             children: [
               GestureDetector(
+                onTap: () => Navigator.pushNamed(context, Routes.home),
                 child: Text(
-                  'PROJECTS',
+                  'PROJECTS/ABOUT',
                   style: Theme.of(context)
                       .textTheme
                       .bodyText1
@@ -33,27 +34,27 @@ class NavigationBar extends StatelessWidget {
               SizedBox(
                 width: 18,
               ),
-              GestureDetector(
-                child: Text(
-                  'ABOUT',
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyText1
-                      .copyWith(color: Theme.of(context).shadowColor),
-                ),
-              ),
-              SizedBox(
-                width: 18,
-              ),
-              GestureDetector(
-                child: Text(
-                  'CONTACT',
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyText1
-                      .copyWith(color: Theme.of(context).shadowColor),
-                ),
-              ),
+              // GestureDetector(
+              //   child: Text(
+              //     'ABOUT',
+              //     style: Theme.of(context)
+              //         .textTheme
+              //         .bodyText1
+              //         .copyWith(color: Theme.of(context).shadowColor),
+              //   ),
+              // ),
+              // SizedBox(
+              //   width: 18,
+              // ),
+              // GestureDetector(
+              //   child: Text(
+              //     'CONTACT',
+              //     style: Theme.of(context)
+              //         .textTheme
+              //         .bodyText1
+              //         .copyWith(color: Theme.of(context).shadowColor),
+              //   ),
+              // ),
             ],
           ),
           // Logo
