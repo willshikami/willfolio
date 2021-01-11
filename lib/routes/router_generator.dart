@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:willfolio/client/pages/home_page.dart';
 import 'package:willfolio/routes/routes.dart';
@@ -9,7 +10,7 @@ class RouterGenerator {
 
     switch (settings.name) {
       case Routes.home:
-        return MaterialPageRoute<HomePage>(
+        return CupertinoPageRoute<HomePage>(
           builder: (_) => HomePage(),
         );
       // case Routes.notifications:
@@ -22,7 +23,7 @@ class RouterGenerator {
   }
 
   static Route<dynamic> _home() {
-    return MaterialPageRoute<HomePage>(
+    return CupertinoPageRoute<HomePage>(
       builder: (_) => HomePage(),
     );
   }
