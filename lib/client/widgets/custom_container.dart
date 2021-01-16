@@ -15,7 +15,7 @@ class CustomContainer extends StatelessWidget {
     final isLargeScreen = ResponsiveWidget.isLargeScreen(context);
     return Container(
       margin: EdgeInsets.symmetric(
-        horizontal: isLargeScreen ? 64 : 32,
+        horizontal: isLargeScreen ? 64 : 24,
         vertical: 24,
       ),
       child: child,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:willfolio/constants/strings.dart';
+import 'package:willfolio/constants/constants.dart';
 import 'package:willfolio/constants/responsiveness.dart';
 import 'package:willfolio/client/widgets/custom_container.dart';
 
@@ -15,8 +15,8 @@ class MastHead extends StatelessWidget {
     return CustomContainer(
       child: Container(
         margin: EdgeInsets.symmetric(
-          horizontal: isLargeScreen ? 24 : 16,
-          vertical: 52,
+          horizontal: isLargeScreen ? 24 : 8,
+          vertical: 42,
         ),
         child: Text(
           mastHeadText,

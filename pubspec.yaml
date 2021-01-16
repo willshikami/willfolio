@@ -12,7 +12,10 @@ dependencies:
   cupertino_icons: ^1.0.0
   flutter:
     sdk: flutter
+  progressive_image: ^1.0.1
+  responsive_builder: ^0.3.0
   universal_html: ^1.2.3
+  url_strategy: ^0.1.1
 
 dev_dependencies:
   flutter_test:
