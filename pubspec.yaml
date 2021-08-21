@@ -9,13 +9,16 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
-  cupertino_icons: ^1.0.0
+  cupertino_icons: ^1.0.3
   flutter:
     sdk: flutter
+  firebase_core: ^1.5.0
+  firebase_storage: ^10.0.2
+  firebase_analytics: ^8.3.0
   progressive_image: ^1.0.1
-  responsive_builder: ^0.3.0
-  universal_html: ^1.2.3
-  url_strategy: ^0.1.1
+  responsive_builder: ^0.4.1
+  universal_html: ^2.0.8
+  url_strategy: ^0.2.0
 
 dev_dependencies:
   flutter_test:
@@ -43,7 +46,12 @@ flutter:
         - asset: assets/fonts/futura_heavy.ttf
           weight: 900
 
-    - family: Orchide Regular
+    - family: Borgat
       fonts:
-        - asset: assets/fonts/orchide.otf
+        - asset: assets/fonts/bogart/bogart_semibold.otf
+          weight: 600
+
+    - family: Rampant One
+      fonts:
+        - asset: assets/fonts/rampant/rampant_one.ttf
           weight: 400

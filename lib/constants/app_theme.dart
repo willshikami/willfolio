@@ -20,18 +20,18 @@ ThemeData appTheme() {
     // Text Theme
     textTheme: TextTheme(
       headline1: TextStyle(
-        fontFamily: 'Futura',
+        fontFamily: 'Borgat',
         fontSize: 64.0,
-        fontWeight: FontWeight.w500,
+        fontWeight: FontWeight.w600,
       ),
       headline2: TextStyle(
-        fontFamily: 'Futura',
+        fontFamily: 'Borgat',
         fontSize: 42.0,
-        fontWeight: FontWeight.w500,
+        fontWeight: FontWeight.w600,
       ),
       headline3: TextStyle(
         fontFamily: 'Futura',
-        fontSize: 24.0,
+        fontSize: 28.0,
         fontStyle: FontStyle.normal,
       ),
       headline4: TextStyle(
@@ -48,8 +48,8 @@ ThemeData appTheme() {
         fontSize: 16.0,
       ),
       subtitle1: TextStyle(
-        fontFamily: 'Orchide Regular',
-        fontSize: 42.0,
+        fontFamily: 'Rampant One',
+        fontSize: 38.0,
       ),
       bodyText1: TextStyle(
         fontFamily: 'Futura',
