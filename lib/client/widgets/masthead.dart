@@ -18,15 +18,42 @@ class MastHead extends StatelessWidget {
           horizontal: isLargeScreen ? 24 : 8,
           vertical: 42,
         ),
-        child: Text(
-          mastHeadText,
-          style: isLargeScreen
-              ? Theme.of(context).textTheme.headline1.copyWith(
-                    color: Theme.of(context).shadowColor,
-                  )
-              : Theme.of(context).textTheme.headline2.copyWith(
-                    color: Theme.of(context).shadowColor,
-                  ),
+        child: Column(
+          children: [
+            Text(
+              mastHeadText,
+              style: isLargeScreen
+                  ? Theme.of(context).textTheme.headline1.copyWith(
+                        color: Theme.of(context).shadowColor,
+                      )
+                  : Theme.of(context).textTheme.headline2.copyWith(
+                        color: Theme.of(context).shadowColor,
+                      ),
+            ),
+            Text(
+              mastHeadSubText,
+              style: isLargeScreen
+                  ? Theme.of(context).textTheme.headline1.copyWith(
+                        color: Theme.of(context).shadowColor,
+                      )
+                  : Theme.of(context).textTheme.headline2.copyWith(
+                        color: Theme.of(context).shadowColor,
+                      ),
+            ),
+            SizedBox(
+              height: 24,
+            ),
+            Text(
+              mastHeadBodyText,
+              style: isLargeScreen
+                  ? Theme.of(context).textTheme.headline3.copyWith(
+                        color: Theme.of(context).shadowColor,
+                      )
+                  : Theme.of(context).textTheme.headline2.copyWith(
+                        color: Theme.of(context).shadowColor,
+                      ),
+            ),
+          ],
         ),
       ),
     );

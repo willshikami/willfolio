@@ -8,7 +8,7 @@ class Logo extends StatelessWidget {
       onTap: () => Navigator.pushNamed(context, Routes.home),
       child: Container(
         child: Text(
-          'Willard Shikami',
+          'll',
           style: Theme.of(context).textTheme.subtitle1,
         ),
       ),
