@@ -9,17 +9,19 @@ import 'package:willfolio/routes/router_generator.dart';
 void main() {
   setPathUrlStrategy();
   runApp(
-    MyApp(),
+    const MyApp(),
   );
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: appTitle,
-      home: HomePage(),
+      home: const HomePage(),
       theme: appTheme(),
       onGenerateRoute: RouterGenerator.generateRoute,
     );

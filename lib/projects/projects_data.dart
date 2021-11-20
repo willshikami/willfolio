@@ -1,16 +1,15 @@
-import 'package:flutter/material.dart';
-
 class Project {
   final int id;
-  final bool isActive;
-  final String projectTitle, projectDescription, projectRole, projectImagePath;
+  final bool? isActive;
+  final String projectTitle;
+  final String? projectDescription, projectRole, projectImagePath;
 
   Project({
-    @required this.id,
-    @required this.projectTitle,
+    required this.id,
+    required this.projectTitle,
     this.projectDescription,
-    @required this.projectImagePath,
-    @required this.projectRole,
+    required this.projectImagePath,
+    required this.projectRole,
     this.isActive,
   });
 }
@@ -19,7 +18,8 @@ List<Project> projects = <Project>[
   Project(
     id: 1,
     projectTitle: 'Meal Time',
-    projectImagePath: 'assets/images/meal_time.jpg',
+    projectImagePath:
+        'https://hosted-assets.web.app/images/jpegs/portfolio/meal_time.jpg',
     projectDescription: '',
     projectRole: 'UI/UX Design',
     isActive: true,
@@ -27,7 +27,8 @@ List<Project> projects = <Project>[
   Project(
     id: 2,
     projectTitle: 'My Plants',
-    projectImagePath: 'assets/images/myplants.jpg',
+    projectImagePath:
+        'https://hosted-assets.web.app/images/jpegs/portfolio/myplants.jpg',
     projectDescription: '',
     projectRole: 'UI/UX Design',
     isActive: true,
@@ -35,7 +36,8 @@ List<Project> projects = <Project>[
   Project(
     id: 3,
     projectTitle: 'NHIF Redesign',
-    projectImagePath: 'assets/images/nhif_redesign.jpg',
+    projectImagePath:
+        'https://hosted-assets.web.app/images/jpegs/portfolio/nhif_redesign.jpg',
     projectDescription: '',
     projectRole: 'UI/UX Design',
     isActive: true,
@@ -43,7 +45,8 @@ List<Project> projects = <Project>[
   Project(
     id: 4,
     projectTitle: 'Places',
-    projectImagePath: 'assets/images/places.jpg',
+    projectImagePath:
+        'https://hosted-assets.web.app/images/jpegs/portfolio/places.jpg',
     projectDescription: '',
     projectRole: 'UI/UX Design',
     isActive: true,

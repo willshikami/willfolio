@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:willfolio/client/widgets/nav/drawer_item.dart';
 import 'package:universal_html/js.dart' as js;
+import 'package:willfolio/constants/app_colors.dart';
 import 'package:willfolio/routes/routes.dart';
 
 class NavigationDrawer extends StatelessWidget {
-  const NavigationDrawer({Key key}) : super(key: key);
+  const NavigationDrawer({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
       width: 300,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           color: Colors.white,
           boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 16)]),
       child: Column(
@@ -33,7 +34,7 @@ class NavigationDrawer extends StatelessWidget {
                 ['https://dribbble.com/dahouseplant'],
               );
             },
-            color: Theme.of(context).highlightColor,
+            color: AppColors.dribbleTextColor,
             title: 'Dribble',
           ),
           // LinkedIn
@@ -45,7 +46,7 @@ class NavigationDrawer extends StatelessWidget {
                 ['https://www.linkedin.com/in/willardshikami/'],
               );
             },
-            color: Theme.of(context).hoverColor,
+            color: AppColors.linkedinTextColor,
             title: 'LinkedIn',
           ),
         ],

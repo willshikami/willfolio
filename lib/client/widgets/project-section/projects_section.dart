@@ -4,10 +4,12 @@ import 'package:willfolio/constants/constants.dart';
 import 'package:willfolio/projects/projects_data.dart';
 
 class ProjectSection extends StatelessWidget {
+  const ProjectSection({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(
+      margin: const EdgeInsets.symmetric(
         vertical: 42,
         horizontal: 24,
       ),

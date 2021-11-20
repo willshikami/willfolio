@@ -11,7 +11,7 @@ class RouterGenerator {
     switch (settings.name) {
       case Routes.home:
         return CupertinoPageRoute<HomePage>(
-          builder: (_) => HomePage(),
+          builder: (_) => const HomePage(),
         );
       // case Routes.notifications:
       //   return MaterialPageRoute<NotificationsPage>(
@@ -24,7 +24,7 @@ class RouterGenerator {
 
   static Route<dynamic> _home() {
     return CupertinoPageRoute<HomePage>(
-      builder: (_) => HomePage(),
+      builder: (_) => const HomePage(),
     );
   }
 }

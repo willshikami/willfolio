@@ -6,8 +6,8 @@ class CustomContainer extends StatelessWidget {
   final Widget child;
 
   const CustomContainer({
-    Key key,
-    @required this.child,
+    Key? key,
+    required this.child,
   }) : super(key: key);
 
   @override

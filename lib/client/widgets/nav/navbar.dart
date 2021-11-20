@@ -2,18 +2,19 @@ import 'package:flutter/material.dart';
 
 import 'package:universal_html/js.dart' as js;
 import 'package:willfolio/client/widgets/logo.dart';
+import 'package:willfolio/constants/app_colors.dart';
 import 'package:willfolio/constants/constants.dart';
 import 'package:willfolio/routes/routes.dart';
 
 class NavigationBar extends StatelessWidget {
   const NavigationBar({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(
+      margin: const EdgeInsets.symmetric(
         vertical: 32,
         horizontal: 48,
       ),
@@ -33,7 +34,7 @@ class NavigationBar extends StatelessWidget {
                   style: Theme.of(context)
                       .textTheme
                       .bodyText1
-                      .copyWith(color: Theme.of(context).shadowColor),
+                      ?.copyWith(color: Theme.of(context).shadowColor),
                 ),
               ),
               smallHorizontalSpacing,
@@ -61,7 +62,7 @@ class NavigationBar extends StatelessWidget {
             ],
           ),
           // Logo
-          Logo(),
+          const Logo(),
           // Links
           Row(
             children: <Widget>[
@@ -77,7 +78,7 @@ class NavigationBar extends StatelessWidget {
                   style: Theme.of(context)
                       .textTheme
                       .bodyText1
-                      .copyWith(color: Theme.of(context).highlightColor),
+                      ?.copyWith(color: AppColors.dribbleTextColor),
                 ),
               ),
               smallHorizontalSpacing,
@@ -93,7 +94,7 @@ class NavigationBar extends StatelessWidget {
                   style: Theme.of(context)
                       .textTheme
                       .bodyText1
-                      .copyWith(color: Theme.of(context).hoverColor),
+                      ?.copyWith(color: AppColors.linkedinTextColor),
                 ),
               ),
             ],
