@@ -2,23 +2,19 @@ import 'package:flutter/material.dart';
 
 ThemeData appTheme() {
   return ThemeData(
-    // Define the default brightness and colors.
-    // brightness: Brightness.dark,
-    // accentColor: Colors.cyan[600],
-    primaryColor: Color(0xFF599E67),
-    backgroundColor: Color(0xFFEFF4F8),
-    splashColor: Color(0xFFFFFFFF),
-    accentColor: Color(0xFF828282),
-    canvasColor: Color(0xFF9AA0AC),
-    shadowColor: Color(0xFF2F2F31),
-    highlightColor: Color(0xFFE94D89),
-    hoverColor: Color(0xFF0D66C2),
+    primaryColor: const Color(0xFF599E67),
+    backgroundColor: const Color(0xFFEFF4F8),
+    splashColor: const Color(0xFFFFFFFF),
+    canvasColor: const Color(0xFF9AA0AC),
+    shadowColor: const Color(0xFF2F2F31),
+    highlightColor: const Color(0xFF9AA0AC),
+    hoverColor: const Color(0xFF9AA0AC),
 
     // Default font family.
     fontFamily: 'Futura',
 
     // Text Theme
-    textTheme: TextTheme(
+    textTheme: const TextTheme(
       headline1: TextStyle(
         fontFamily: 'Borgat',
         fontSize: 64.0,
@@ -32,7 +28,7 @@ ThemeData appTheme() {
       headline3: TextStyle(
         fontFamily: 'Futura',
         fontSize: 28.0,
-        fontStyle: FontStyle.normal,
+        fontWeight: FontWeight.w500,
       ),
       headline4: TextStyle(
         fontFamily: 'Futura',

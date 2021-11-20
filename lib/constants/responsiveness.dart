@@ -11,8 +11,12 @@ class ResponsiveWidget extends StatelessWidget {
   /// The argument [largeScreen] must not be null.
   /// If medium screen is null then large screen will be drawn in place.
   /// if small screen is null then large screen will be drawn in place.
-  const ResponsiveWidget(
-      {this.largeScreen, this.mediumScreen, this.smallScreen});
+  const ResponsiveWidget({
+    Key? key,
+    required this.largeScreen,
+    required this.mediumScreen,
+    required this.smallScreen,
+  }) : super(key: key);
 
   /// Widget to be drawn on a large screen.
   final Widget largeScreen;
@@ -32,7 +36,7 @@ class ResponsiveWidget extends StatelessWidget {
           return largeScreen;
         } else {
           //if small screen implementation not available, then return large screen
-          return smallScreen ?? largeScreen;
+          return smallScreen;
         }
       },
     );

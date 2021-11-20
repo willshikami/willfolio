@@ -11,6 +11,8 @@ import 'package:willfolio/constants/constants.dart';
 import 'package:willfolio/constants/responsiveness.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     final isLargeScreen = ResponsiveWidget.isLargeScreen(context);
@@ -18,23 +20,23 @@ class HomePage extends StatelessWidget {
       builder: (BuildContext context, SizingInformation sizingInformation) =>
           Scaffold(
         drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
-            ? NavigationDrawer()
+            ? const NavigationDrawer()
             : null,
         backgroundColor: Theme.of(context).splashColor,
-        body: Container(
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                NavBar(),
-                MastHead(),
-                ScrollDown(),
-                // Projects
-                isLargeScreen ? ProjectSection() : ResponsiveProjectSection(),
-                veryLargeVerticalSpacing,
-                Footer(),
-                veryLargeVerticalSpacing,
-              ],
-            ),
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              const NavBar(),
+              const MastHead(),
+              const ScrollDown(),
+              // Projects
+              isLargeScreen
+                  ? const ProjectSection()
+                  : const ResponsiveProjectSection(),
+              veryLargeVerticalSpacing,
+              const Footer(),
+              veryLargeVerticalSpacing,
+            ],
           ),
         ),
       ),
