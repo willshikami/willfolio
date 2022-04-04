@@ -6,8 +6,8 @@ import 'package:willfolio/constants/app_colors.dart';
 import 'package:willfolio/constants/constants.dart';
 import 'package:willfolio/routes/routes.dart';
 
-class NavigationBar extends StatelessWidget {
-  const NavigationBar({
+class MainNavBar extends StatelessWidget {
+  const MainNavBar({
     Key? key,
   }) : super(key: key);
 
@@ -70,7 +70,7 @@ class NavigationBar extends StatelessWidget {
                 onTap: () {
                   js.context.callMethod(
                     'open',
-                    ['https://dribbble.com/dahouseplant'],
+                    ['https://dribbble.com/willshikami'],
                   );
                 },
                 child: Text(

@@ -10,7 +10,10 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.2
+  cached_network_image: ^3.1.0+1
   flutter:
+    sdk: flutter
+  flutter_web_plugins:
     sdk: flutter
   firebase_core: ^1.5.0
   firebase_storage: ^10.0.2
@@ -18,7 +21,8 @@ dependencies:
   responsive_builder: ^0.4.1
   universal_html: ^2.0.8
   url_strategy: ^0.2.0
-  cached_network_image: ^3.1.0+1
+  platform: ^3.1.0
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:

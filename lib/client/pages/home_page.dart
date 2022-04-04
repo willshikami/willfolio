@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
                   ? const ProjectSection()
                   : const ResponsiveProjectSection(),
               veryLargeVerticalSpacing,
-              const Footer(),
+              Footer(),
               veryLargeVerticalSpacing,
             ],
           ),
