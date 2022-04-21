@@ -35,7 +35,7 @@ class NavigationDrawer extends StatelessWidget {
               );
             },
             color: AppColors.dribbleTextColor,
-            title: 'Dribbble Profile',
+            title: 'Dribbble',
           ),
           // LinkedIn
           DrawerItem(
@@ -47,7 +47,7 @@ class NavigationDrawer extends StatelessWidget {
               );
             },
             color: AppColors.linkedinTextColor,
-            title: 'LinkedIn Profile',
+            title: 'LinkedIn',
           ),
         ],
       ),

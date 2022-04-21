@@ -10,10 +10,8 @@ void configureApp() {
   setUrlStrategy(PathUrlStrategy());
 }
 
-void main() {
-  WidgetsFlutterBinding.ensureInitialized();
+void main() async {
   configureApp();
-  // setPathUrlStrategy();
   runApp(
     const MyApp(),
   );

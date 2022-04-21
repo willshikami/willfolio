@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -29,7 +30,25 @@
   <title>willfolio</title>
   <link rel="manifest" href="manifest.json">
 </head>
+
 <body>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+  <script src="main.dart.js" type="application/javascript"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDVNbksiy5oCLBsXa5p3odxFUurl_LMssA",
+      authDomain: "willardshikami-web.firebaseapp.com",
+      projectId: "willardshikami-web",
+      storageBucket: "willardshikami-web.appspot.com",
+      messagingSenderId: "817705506212",
+      appId: "1:817705506212:web:c57d9105f9c0c45830dd31",
+      measurementId: "G-C4SFQKJMQC"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    // firebase.analytics();
+  </script>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
@@ -97,5 +116,7 @@
       loadMainDartJs();
     }
   </script>
+
 </body>
+
 </html>

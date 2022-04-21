@@ -5,6 +5,7 @@ class ResponsiveWidget extends StatelessWidget {
   /// Refer to https://developer.android.com/training/multiscreen/screensizes#TaskUseSWQuali
   static const int smallScreenBreakPoint = 840;
   static const int smallScreenHeight = 600;
+  static const int mobileScreenBreakPoint = 680;
 
   /// Creates a ResponsiveWidget.
   ///
@@ -50,5 +51,9 @@ class ResponsiveWidget extends StatelessWidget {
   /// Small screen is any screen whose width is less than [smallScreenBreakPoint] pixels
   static bool isSmallScreen(BuildContext context) {
     return MediaQuery.of(context).size.width < smallScreenBreakPoint;
+  }
+
+  static bool isMobileScreen(BuildContext context) {
+    return MediaQuery.of(context).size.width < mobileScreenBreakPoint;
   }
 }

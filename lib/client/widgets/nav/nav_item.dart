@@ -12,11 +12,14 @@ class NavBarItem extends StatelessWidget {
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => callback,
-      child: Text(
-        title,
-        style: TextStyle(fontSize: 18, color: color),
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () => callback,
+        child: Text(
+          title,
+          style: TextStyle(fontSize: 18, color: color),
+        ),
       ),
     );
   }
