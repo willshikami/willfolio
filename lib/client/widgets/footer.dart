@@ -14,8 +14,8 @@ class Footer extends StatelessWidget {
     return Center(
       child: Text(
         '© Willard Shikami $currentYear',
-        style: Theme.of(context).textTheme.headline6?.copyWith(
-              color: AppColors.midGreyColor,
+        style: Theme.of(context).textTheme.headline5?.copyWith(
+              color: AppColors.primaryTextColor,
             ),
       ),
     );
