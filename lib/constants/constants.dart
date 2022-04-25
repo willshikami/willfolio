@@ -9,6 +9,7 @@ const String appTitle = 'Willard Shikami';
 
 // App spaces
 const SizedBox mediumHorizontalSpacing = SizedBox(width: 32);
+const SizedBox mediumVerticalSpacing = SizedBox(height: 32);
 const SizedBox veryLargeVerticalSpacing = SizedBox(height: 64);
 const SizedBox veryLargeHorizontalSpacing = SizedBox(height: 64);
 const SizedBox smallHorizontalSpacing = SizedBox(width: 18);

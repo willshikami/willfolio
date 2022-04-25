@@ -31,11 +31,11 @@ class NavigationDrawer extends StatelessWidget {
             callback: () {
               js.context.callMethod(
                 'open',
-                ['https://dribbble.com/dahouseplant'],
+                ['https://dribbble.com/willshikami'],
               );
             },
             color: AppColors.dribbleTextColor,
-            title: 'Dribble',
+            title: 'Dribbble',
           ),
           // LinkedIn
           DrawerItem(

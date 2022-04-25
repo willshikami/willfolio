@@ -17,15 +17,6 @@ class Project {
 List<Project> projects = <Project>[
   Project(
     id: 1,
-    projectTitle: 'Meal Time',
-    projectImagePath:
-        'https://hosted-assets.web.app/images/jpegs/portfolio/meal_time.jpg',
-    projectDescription: '',
-    projectRole: 'UI/UX Design',
-    isActive: true,
-  ),
-  Project(
-    id: 2,
     projectTitle: 'My Plants',
     projectImagePath:
         'https://hosted-assets.web.app/images/jpegs/portfolio/myplants.jpg',
@@ -34,7 +25,25 @@ List<Project> projects = <Project>[
     isActive: true,
   ),
   Project(
+    id: 2,
+    projectTitle: 'Workspaces',
+    projectImagePath:
+        'https://hosted-assets.web.app/images/jpegs/portfolio/workspaces.jpg',
+    projectDescription: '',
+    projectRole: 'UI/UX Design',
+    isActive: true,
+  ),
+  Project(
     id: 3,
+    projectTitle: 'Meal Time',
+    projectImagePath:
+        'https://hosted-assets.web.app/images/jpegs/portfolio/meal_time.jpg',
+    projectDescription: '',
+    projectRole: 'UI/UX Design',
+    isActive: true,
+  ),
+  Project(
+    id: 4,
     projectTitle: 'NHIF Redesign',
     projectImagePath:
         'https://hosted-assets.web.app/images/jpegs/portfolio/nhif_redesign.jpg',
@@ -43,7 +52,16 @@ List<Project> projects = <Project>[
     isActive: true,
   ),
   Project(
-    id: 4,
+    id: 5,
+    projectTitle: 'Newstand',
+    projectImagePath:
+        'https://hosted-assets.web.app/images/jpegs/portfolio/newstand.jpg',
+    projectDescription: '',
+    projectRole: 'UI/UX Design',
+    isActive: true,
+  ),
+  Project(
+    id: 6,
     projectTitle: 'Places',
     projectImagePath:
         'https://hosted-assets.web.app/images/jpegs/portfolio/places.jpg',

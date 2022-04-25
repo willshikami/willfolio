@@ -13,23 +13,31 @@ class MastHead extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isLargeScreen = ResponsiveWidget.isLargeScreen(context);
+    final isMobileScreen = ResponsiveWidget.isMobileScreen(context);
     return CustomContainer(
       child: Container(
         alignment: Alignment.center,
         margin: EdgeInsets.symmetric(
-          horizontal: isLargeScreen ? 24 : 8,
-          vertical: 42,
+          horizontal: isLargeScreen
+              ? 124
+              : isMobileScreen
+                  ? 8
+                  : 24,
+          vertical: 56,
         ),
         child: Column(
           children: [
+            veryLargeVerticalSpacing,
             Text(
               mastHeadText,
               textAlign: TextAlign.center,
               style: isLargeScreen
                   ? Theme.of(context).textTheme.headline1?.copyWith(
                         color: Theme.of(context).shadowColor,
+                        height: 1.2,
                       )
                   : Theme.of(context).textTheme.headline2?.copyWith(
+                        height: 1.2,
                         color: Theme.of(context).shadowColor,
                       ),
             ),
@@ -38,9 +46,11 @@ class MastHead extends StatelessWidget {
               textAlign: TextAlign.center,
               style: isLargeScreen
                   ? Theme.of(context).textTheme.headline1?.copyWith(
+                        height: 1.2,
                         color: Theme.of(context).shadowColor,
                       )
                   : Theme.of(context).textTheme.headline2?.copyWith(
+                        height: 1.2,
                         color: Theme.of(context).shadowColor,
                       ),
             ),

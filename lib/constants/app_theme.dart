@@ -11,36 +11,36 @@ ThemeData appTheme() {
     hoverColor: const Color(0xFF9AA0AC),
 
     // Default font family.
-    fontFamily: 'Futura',
+    fontFamily: 'Urbanist',
 
     // Text Theme
     textTheme: const TextTheme(
       headline1: TextStyle(
-        fontFamily: 'Borgat',
+        fontFamily: 'Bogart',
         fontSize: 64.0,
         fontWeight: FontWeight.w600,
       ),
       headline2: TextStyle(
-        fontFamily: 'Borgat',
+        fontFamily: 'Bogart',
         fontSize: 42.0,
         fontWeight: FontWeight.w600,
       ),
       headline3: TextStyle(
-        fontFamily: 'Futura',
+        fontFamily: 'Urbanist',
         fontSize: 28.0,
         fontWeight: FontWeight.w500,
       ),
       headline4: TextStyle(
-        fontFamily: 'Futura',
+        fontFamily: 'Urbanist',
         fontSize: 18.0,
         fontWeight: FontWeight.bold,
       ),
       headline5: TextStyle(
-        fontFamily: 'Futura',
+        fontFamily: 'Urbanist',
         fontSize: 18.0,
       ),
       headline6: TextStyle(
-        fontFamily: 'Futura',
+        fontFamily: 'Urbanist',
         fontSize: 16.0,
       ),
       subtitle1: TextStyle(
@@ -48,12 +48,12 @@ ThemeData appTheme() {
         fontSize: 38.0,
       ),
       bodyText1: TextStyle(
-        fontFamily: 'Futura',
+        fontFamily: 'Urbanist',
         fontSize: 14.0,
         fontWeight: FontWeight.bold,
       ),
       bodyText2: TextStyle(
-        fontFamily: 'Futura',
+        fontFamily: 'Urbanist',
         fontSize: 14.0,
       ),
     ),

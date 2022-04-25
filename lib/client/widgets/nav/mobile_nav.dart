@@ -13,7 +13,13 @@ class MobileNavigation extends StatelessWidget {
         children: <Widget>[
           const Logo(),
           IconButton(
-            icon: const Icon(Icons.menu),
+            splashColor: Colors.transparent,
+            hoverColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            icon: const Icon(
+              Icons.menu,
+              size: 36,
+            ),
             onPressed: () => Scaffold.of(context).openDrawer(),
           ),
         ],
