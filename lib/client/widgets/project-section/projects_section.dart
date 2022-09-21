@@ -13,14 +13,15 @@ class ProjectSection extends StatelessWidget {
       );
     }
 
-  final isLargeScreen = ResponsiveWidget.isLargeScreen(context);
-  final isMobileScreen = ResponsiveWidget.isMobileScreen(context);
+    final isLargeScreen = ResponsiveWidget.isLargeScreen(context);
+    final isMobileScreen = ResponsiveWidget.isMobileScreen(context);
 
     return Flex(
       mainAxisSize: MainAxisSize.min,
       direction: Axis.vertical,
       children: <Widget>[
         GridView.count(
+          physics: const NeverScrollableScrollPhysics(),
           scrollDirection: Axis.vertical,
           shrinkWrap: true,
           crossAxisCount: isLargeScreen
