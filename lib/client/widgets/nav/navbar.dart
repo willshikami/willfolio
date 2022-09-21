@@ -32,10 +32,10 @@ class MainNavBar extends StatelessWidget {
                     Routes.home,
                   ),
                   child: Text(
-                    'PROJECTS/ABOUT',
+                    'Projects/About',
                     style: Theme.of(context)
                         .textTheme
-                        .bodyText1
+                        .headline5
                         ?.copyWith(color: Theme.of(context).shadowColor),
                   ),
                 ),
@@ -82,7 +82,7 @@ class MainNavBar extends StatelessWidget {
                     'Dribbble',
                     style: Theme.of(context)
                         .textTheme
-                        .bodyText1
+                        .headline5
                         ?.copyWith(color: AppColors.dribbleTextColor),
                   ),
                 ),
@@ -101,7 +101,7 @@ class MainNavBar extends StatelessWidget {
                     'LinkedIn',
                     style: Theme.of(context)
                         .textTheme
-                        .bodyText1
+                        .headline5
                         ?.copyWith(color: AppColors.linkedinTextColor),
                   ),
                 ),

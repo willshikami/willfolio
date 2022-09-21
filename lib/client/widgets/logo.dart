@@ -22,6 +22,7 @@ class _LogoState extends State<Logo> {
       child: MouseRegion(
         onEnter: (event) => onEntered(true),
         onExit: (event) => onEntered(false),
+        cursor: SystemMouseCursors.click,
         child: CachedNetworkImage(
           imageUrl: 'assets/images/logo.png',
           width: isLargeScreen

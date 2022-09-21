@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 const String mastHeadText = "Hi, I'm Willard,";
-const String mastHeadSubText = "a Designer and Developer";
+const String mastHeadSubText = "a Product Designer";
 const String mastHeadBodyText =
-    "Currently working at Savannah Informatics. In my free time I work on my ideas. Some of them are listed below.";
+    "Currently working on health products at Savannah Informatics. In my free time I work on my ideas. Some of them are listed below.";
 
 const String appTitle = 'Willard Shikami';
 

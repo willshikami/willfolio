@@ -37,7 +37,8 @@ ThemeData appTheme() {
       ),
       headline5: TextStyle(
         fontFamily: 'Urbanist',
-        fontSize: 18.0,
+        fontSize: 16.0,
+        fontWeight: FontWeight.bold,
       ),
       headline6: TextStyle(
         fontFamily: 'Urbanist',
